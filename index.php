@@ -14,10 +14,12 @@ $slides = selectFrom($query, "ALL");
         <?php
         foreach ($slides as $slide) {
         ?>
-            <a href="product.php?id=<?= $slide['id'] ?>"><img src="./img/products/<?= $slide['image'] ?>" alt="<?= $slide['name'] ?>"></a>
+            <a href="product.php?id=<?= $slide['id'] ?>" class="block"><img src="./img/products/<?= $slide['image'] ?>" alt="<?= $slide['name'] ?>"></a>
         <?php } ?>
     </div>
 </div>
-<button class="slider-prev">Prev</button>
-<button class="slider-next">Next</button>
+<div class="btns wcenter flex">
+    <button class="slider-prev accent-to-black">Prev</button>
+    <button class="slider-next accent-to-black">Next</button>
+</div>
 <script src="./js/slider.js"></script>

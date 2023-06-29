@@ -6,7 +6,7 @@ if (!isset($_GET['rules'])) {
     $_SESSION['result'] = "Вы пренебрегаете нашими правилами.";
 } else {
     // Подключение БД и сессии
-    require("../funcs/DBinteraction.php");
+    require_once("../funcs/DBinteraction.php");
     $_SESSION['result'] = "Регистрация не была завершена по неизвестной ошибке";
 
     // Запись в переменные для последующего SQL-запроса

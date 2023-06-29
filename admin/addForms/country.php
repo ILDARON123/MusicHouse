@@ -1,7 +1,8 @@
-<form action="" class="flex column g10 ai-c">
+<form action="./funcs/addData.php" method="get" class="flex column g10 ai-c">
     <h2>
         Новая страна-производитель:
     </h2>
+    <input type="text" class="hide" name="data" value="countries">
     <div>
         <div class="toolInfo">
             <span class="ctrl-r">Название:</span>

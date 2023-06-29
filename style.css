@@ -14,7 +14,6 @@ h3 {
 }
 
 label {
-  user-select: none;
   cursor: pointer;
 
   display: block;
@@ -36,6 +35,13 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+#output > *,
+#alertPlace > * {
+  border-radius: 20px;
+  border: black 2px solid;
+  padding: 20px 30px;
+  background: #FFF;
 }
 
 /* кастом алерты */
@@ -254,8 +260,8 @@ a.product-card:hover>img {
 /* Слайдер */
 .slider {
   border: 2px solid black;
-  width: 256px;
-  height: 256px;
+  width: 800px;
+  height: 450px;
   margin: 20px auto;
   overflow: hidden;
 }
@@ -269,3 +275,10 @@ a.product-card:hover>img {
   left: 0;
   transition: all ease 1s;
 }
+
+.slider-line > a {  
+  width: 800px;
+  height: 450px;
+}
+
+.slider-line > a

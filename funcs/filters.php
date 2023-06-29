@@ -66,7 +66,7 @@ function applyFilters()
         foreach ($whereVars as $table => $search) {
             if ($search) {
                 $where .= $whereSQL[$key] . "`products`.`" . $table . "` = " . $search;
-                if ($key == 1) {
+                if ($key == 0) {
                     $key++;
                 }
             }
