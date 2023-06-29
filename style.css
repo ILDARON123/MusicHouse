@@ -267,8 +267,8 @@ a.product-card:hover>img {
 }
 
 .slider-line {
-  width: 1024px;
-  height: 256px;
+  width: auto;
+  height: 100%;
   display: flex;
   background: #00000000;
   position: relative;

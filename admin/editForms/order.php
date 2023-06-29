@@ -1,5 +1,4 @@
 <?php
-require_once("./sess")
 require_once("./funcs/DBinteraction.php");
 $query = "SELECT 
 orders.id, 
@@ -36,18 +35,19 @@ foreach ($thisOrder as $key => $item) {
                 <span class="ctrl-r"><?= $descOrder[$descOrderKey] ?>:</span>
                 <span><?= $item ?></span>
             </div>
-<?php
+    <?php
             $descOrderKey++;
             break;
     }
-} 
+}
 
 if ($thisOrder['status'] == "Новый") {
-    echo $_SESSION['mayDel'] = $thisOrder['id'];
+    require_once("./funcs/session.php");
+    $_SESSION['mayDel'] = $thisOrder['id'];
     ?>
-<div class="btns mauto">
-    <a href="../funcs/acceptOrder.php?id=<?= $thisOrder['id'] ?>" class="accent-to-black block brad10">Одобрить</a>
-    <a href="../ajax-sources/reasonOfDel.html" class="ajax accent-to-black block brad10">Отказать</a>
-    <a href="../admin.php" class="accent-to-black brad10">Отмена</a>
-</div>
+    <div class="btns mauto">
+        <a href="../funcs/acceptOrder.php?id=<?= $thisOrder['id'] ?>" class="accent-to-black block brad10">Одобрить</a>
+        <a href="../ajax-sources/reasonOfDel.html" class="ajax accent-to-black block brad10">Отказать</a>
+        <a href="../admin.php" class="accent-to-black brad10">Отмена</a>
+    </div>
 <?php }
