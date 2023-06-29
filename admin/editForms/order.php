@@ -44,7 +44,7 @@ foreach ($thisOrder as $key => $item) {
 if ($thisOrder['status'] == "Новый") {?>
 <div class="btns mauto">
     <a href="../funcs/acceptOrder.php?id=<?= $thisOrder['id'] ?>" class="accent-to-black block brad10">Одобрить</a>
-    <?php $_SESSION['mayDel'] = $thisOrder['id']; ?>
+    <?php echo $_SESSION['mayDel'] = $thisOrder['id']; ?>
     <a href="../ajax-sources/reasonOfDel.html" class="ajax accent-to-black block brad10">Отказать</a>
     <a href="../admin.php" class="accent-to-black brad10">Отмена</a>
 </div>
