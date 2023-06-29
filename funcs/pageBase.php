@@ -15,8 +15,8 @@
 <body>
   <div id="alertPlace"></div>
   <header class="flex jc-sb white-text">
-    <div>
-      <img src="img/logo" alt="MusicHouse">
+    <div class="logo-png">
+      <img src="img/musichouse.png" alt="MusicHouse">
     </div>
     <nav class="flex g10">
       <a href="/">О нас</a>
