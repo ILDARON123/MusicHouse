@@ -2,7 +2,7 @@
 require("user.php");
 require("../admin/security.php");
 require("DBinteraction.php");
-if (isset($_GET['reason'])) {
+if (isset($_POST['reason'])) {
     if (isset($_SESSION['maydel'])) {
         $query = "INSERT INTO `cancelled_orders` (`id`, `reason`, `order`) VALUES (NULL,'" . $_GET['reason'] . "','" . $_SESSION['mayDel'] . "')";
         insertOrUpdate($query);
