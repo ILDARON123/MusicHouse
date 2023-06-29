@@ -279,6 +279,14 @@ a.product-card:hover>img {
 .slider-line > a {  
   width: 800px;
   height: 450px;
+  overflow: hidden;
 }
 
-.slider-line > a
+.slider-line > a > img {
+  width: 100%;
+
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
