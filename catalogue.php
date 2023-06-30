@@ -19,7 +19,7 @@ require("./funcs/DBinteraction.php");
         products.image,
         products.create_date,
         countries.name AS country,
-        types.name AS type
+        types.name AS `type`
       FROM products
       INNER JOIN countries ON products.country = countries.id
       INNER JOIN types ON products.type = types.id ";
